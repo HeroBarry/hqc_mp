@@ -22,7 +22,7 @@ public interface MpSmsCodeService {
 	 *            手机短信验证码
 	 * @return 影响行数
 	 */
-	int save(MpSmsCodeEntity entity);
+	void save(MpSmsCodeEntity entity);
 
 	/**
 	 * 查询手机短信验证码列表

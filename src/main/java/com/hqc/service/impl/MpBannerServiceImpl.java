@@ -1,5 +1,6 @@
 package com.hqc.service.impl;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -29,8 +30,8 @@ public class MpBannerServiceImpl implements MpBannerService {
 	private MpBannerDao dao;
 
 	@Override
-	public int save(MpBannerEntity entity) {
-		return dao.insertSelective(entity);
+	public void save(MpBannerEntity entity) {
+		dao.save(entity);
 	}
 
 	@Override
@@ -40,7 +41,7 @@ public class MpBannerServiceImpl implements MpBannerService {
 
 	@Override
 	public MpBannerEntity queryObject(Long id) {
-		return dao.selectByPrimaryKey(id);
+		return dao.queryObject(id);
 	}
 
 	@Override
@@ -50,12 +51,14 @@ public class MpBannerServiceImpl implements MpBannerService {
 
 	@Override
 	public int updateByPrimaryKey(MpBannerEntity entity) {
-		return dao.updateByPrimaryKeySelective(entity);
+		return dao.update(entity);
 	}
 
 	@Override
 	public int delete(Long id) {
-		return dao.deleteByPrimaryKey(id);
+		Map<String, Object> map=new HashMap<>();
+		map.put("id",id);
+		return dao.delete(map);
 	}
 
 	@Override

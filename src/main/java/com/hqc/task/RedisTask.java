@@ -33,7 +33,7 @@ public class RedisTask {
 	@Transactional
 	// @Scheduled(cron = "0 0 1 * * ? ")
 	public void autoTask() throws Exception {
-		//redisUtil.clear();
+		redisUtil.clear();
 		logger.info("清空所有Redis缓存成功");
 	}
 }

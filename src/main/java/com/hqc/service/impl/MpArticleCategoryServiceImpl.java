@@ -44,8 +44,8 @@ public class MpArticleCategoryServiceImpl implements MpArticleCategoryService {
 	}
 
 	@Override
-	public int save(MpArticleCategoryEntity articleCategoryEntity) {
-		return dao.insert(articleCategoryEntity);
+	public void save(MpArticleCategoryEntity articleCategoryEntity) {
+		 dao.save(articleCategoryEntity);
 	}
 
 	@Override

@@ -23,8 +23,8 @@ public class MpSignInServiceImpl implements MpSignInService {
 
 
 	@Override
-	public int save(MpSignInEntity entity) {
-		return dao.insert(entity);
+	public void save(MpSignInEntity entity) {
+		dao.save(entity);
 	}
 
 	@Override

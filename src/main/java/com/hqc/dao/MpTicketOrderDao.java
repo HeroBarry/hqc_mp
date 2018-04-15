@@ -1,5 +1,6 @@
 package com.hqc.dao;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import com.hqc.entity.MpTicketOrderEntity;
@@ -12,6 +13,7 @@ import com.hqc.entity.MpTicketOrderEntity;
  * @date：2017年5月17日
  * 
  */
+@Mapper
 public interface MpTicketOrderDao extends BaseDao<MpTicketOrderEntity> {
 
 	/**

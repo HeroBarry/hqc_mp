@@ -4,7 +4,9 @@ import java.util.List;
 import java.util.Map;
 
 import com.hqc.entity.MpGoodsExchangeRecordEntity;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface GoodsExchangeDao extends BaseDao<MpGoodsExchangeRecordEntity> {
 	List<Map<String, Object>> queryList1(Map<String, Object> map);
 

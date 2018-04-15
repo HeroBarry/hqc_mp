@@ -3,7 +3,9 @@ package com.hqc.dao;
 import java.util.List;
 
 import com.hqc.entity.MpArticleCategoryEntity;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface MpArticleCategoryDao extends BaseDao<MpArticleCategoryEntity> {
 
 	List<MpArticleCategoryEntity> querybyparent();

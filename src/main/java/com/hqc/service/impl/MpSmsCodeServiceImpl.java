@@ -1,5 +1,6 @@
 package com.hqc.service.impl;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -26,8 +27,8 @@ public class MpSmsCodeServiceImpl implements MpSmsCodeService {
 	private MpSmsCodeDao mpSmsCodeDao;
 
 	@Override
-	public int save(MpSmsCodeEntity entity) {
-		return mpSmsCodeDao.insertSelective(entity);
+	public void save(MpSmsCodeEntity entity) {
+		 mpSmsCodeDao.save(entity);
 	}
 
 	@Override
@@ -47,12 +48,14 @@ public class MpSmsCodeServiceImpl implements MpSmsCodeService {
 
 	@Override
 	public int updateByPrimaryKey(MpSmsCodeEntity entity) {
-		return mpSmsCodeDao.updateByPrimaryKeySelective(entity);
+		return mpSmsCodeDao.update(entity);
 	}
 
 	@Override
 	public int delete(Long id) {
-		return mpSmsCodeDao.deleteByPrimaryKey(id);
+		Map<String, Object> map=new HashMap<>();
+		map.put("id",id);
+		return mpSmsCodeDao.delete(map);
 	}
 
 }

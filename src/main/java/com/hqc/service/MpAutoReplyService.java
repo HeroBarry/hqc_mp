@@ -22,7 +22,7 @@ public interface MpAutoReplyService {
 	 *            公众号自动回复
 	 * @return 影响行数
 	 */
-	int save(MpAutoReplyEntity mpAutoReply) throws Exception;
+	void save(MpAutoReplyEntity mpAutoReply) throws Exception;
 
 	/**
 	 * 查询公众号自动回复列表

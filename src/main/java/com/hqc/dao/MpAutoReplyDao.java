@@ -1,5 +1,6 @@
 package com.hqc.dao;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import com.hqc.entity.MpAutoReplyEntity;
@@ -12,6 +13,7 @@ import com.hqc.entity.MpAutoReplyEntity;
  * @date：2017年5月18日
  * 
  */
+@Mapper
 public interface MpAutoReplyDao extends BaseDao<MpAutoReplyEntity> {
 
 	/**

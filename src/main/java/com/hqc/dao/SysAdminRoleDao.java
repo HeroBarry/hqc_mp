@@ -3,6 +3,7 @@ package com.hqc.dao;
 import java.util.List;
 
 import com.hqc.entity.SysAdminRoleEntity;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 用户与角色对应关系
@@ -11,6 +12,7 @@ import com.hqc.entity.SysAdminRoleEntity;
  * @email sunlightcs@gmail.com
  * @date 2016年9月18日 上午9:34:46
  */
+@Mapper
 public interface SysAdminRoleDao extends BaseDao<SysAdminRoleEntity> {
 
 	/**

@@ -3,6 +3,7 @@ package com.hqc.dao;
 import java.util.List;
 
 import com.hqc.entity.MpProjectCategoryEntity;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * @author Administrator
@@ -10,6 +11,7 @@ import com.hqc.entity.MpProjectCategoryEntity;
  * @创建人
  * @创建时间 2017年5月19日
  */
+@Mapper
 public interface ProjectCategoryDao extends BaseDao<MpProjectCategoryEntity> {
 
 	/**

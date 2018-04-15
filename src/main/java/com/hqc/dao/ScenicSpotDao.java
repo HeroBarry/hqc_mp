@@ -1,6 +1,7 @@
 package com.hqc.dao;
 
 import com.hqc.entity.MpScenicSpotEntity;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 景区管理Dao
@@ -10,6 +11,7 @@ import com.hqc.entity.MpScenicSpotEntity;
  * @创建人
  * @创建时间 2017年5月16日
  */
+@Mapper
 public interface ScenicSpotDao extends BaseDao<MpScenicSpotEntity> {
 
 	/**

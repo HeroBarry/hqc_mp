@@ -22,7 +22,7 @@ public interface MpStoreService {
 	 *            微信门店
 	 * @return 影响行数
 	 */
-	int save(MpStoreEntity entity);
+	void save(MpStoreEntity entity);
 
 	/**
 	 * 查询微信门店列表

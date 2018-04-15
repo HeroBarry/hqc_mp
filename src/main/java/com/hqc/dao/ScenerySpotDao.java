@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.hqc.entity.MpScenerySpotEntity;
 import com.hqc.entity.MpScenicSpotEntity;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 景点管理Dao
@@ -13,6 +14,7 @@ import com.hqc.entity.MpScenicSpotEntity;
  * @创建人
  * @创建时间 2017年5月15日
  */
+@Mapper
 public interface ScenerySpotDao extends BaseDao<MpScenerySpotEntity> {
 
 	/**

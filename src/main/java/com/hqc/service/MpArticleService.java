@@ -64,7 +64,7 @@ public interface MpArticleService {
 	 *            图文信息表
 	 * @return 影响的行数
 	 */
-	int save(MpArticleEntity articleEntity);
+	void save(MpArticleEntity articleEntity);
 
 	/**
 	 * 根据图文信息ID查询

@@ -22,7 +22,7 @@ public interface Mp520Service {
 	 *            东部华侨城520活动记录表
 	 * @return 影响行数
 	 */
-	int save(Mp520Entity mp520);
+	void save(Mp520Entity mp520);
 
 	/**
 	 * 查询列表

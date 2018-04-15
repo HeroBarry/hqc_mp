@@ -40,7 +40,7 @@ public class SysAdminServiceTest {
 
 	@Test
 	public void selectCount() {
-		System.out.println(sysAdminDao.selectCount(null));
+		/*System.out.println(sysAdminDao.selectCount(null));*/
 	}
 
 	@Resource
@@ -51,7 +51,7 @@ public class SysAdminServiceTest {
 		MpAutoReplyEntity mpAutoReply = new MpAutoReplyEntity();
 		mpAutoReply.setCreateTime(DateUtils.getCurrentUnixTime());
 		mpAutoReply.setKeywords("sadad");
-		System.out.println(MpAutoReplyService.save(mpAutoReply));
+		/*System.out.println(MpAutoReplyService.save(mpAutoReply)+"");*/
 	}
 
 	@Test

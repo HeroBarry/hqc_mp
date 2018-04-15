@@ -51,7 +51,7 @@ public class MemberGoodsIntegralServiceImpl implements MemberGoodsIntegralServic
 	}
 	/**
 	 *消费获得 积分
-	 * @param entity 会员
+	 * @param tempEntity 会员
 	 * @param money 消费金额
 	 * @throws Exception
 	 */
@@ -170,7 +170,7 @@ public class MemberGoodsIntegralServiceImpl implements MemberGoodsIntegralServic
 	  * 添加积分商品兑换记录
 	  */
 	public void insert(MpGoodsExchangeRecordEntity entity){
-		memberGoodsIntegralDao.insert(entity);
+		memberGoodsIntegralDao.save(entity);
 	}
 	/**
 	 * 修改门票库存

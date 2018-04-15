@@ -6,6 +6,7 @@ import java.util.Map;
 import com.hqc.entity.MpCashCouponEntity;
 import com.hqc.entity.MpGoodsEntity;
 import com.hqc.entity.MpMemberEntity;
+import org.apache.ibatis.annotations.Mapper;
 
 
 /**
@@ -13,6 +14,7 @@ import com.hqc.entity.MpMemberEntity;
  * @author Administrator
  *
  */
+@Mapper
 public interface IntegralMallWxDao  extends BaseDao<MpGoodsEntity>{
 	/**
 	 * 商城列表

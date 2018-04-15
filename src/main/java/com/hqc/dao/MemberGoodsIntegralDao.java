@@ -9,12 +9,14 @@ import com.hqc.entity.MpIntegralRecordEntity;
 import com.hqc.entity.MpMemberEntity;
 import com.hqc.entity.MpOrderRecordsEntity;
 import com.hqc.entity.MpVipLevelEntity;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 积分公共方法
  * @author Administrator
  *
  */
+@Mapper
 public interface MemberGoodsIntegralDao extends BaseDao<MpGoodsExchangeRecordEntity>{
 	/**
 	 * 查询特别日

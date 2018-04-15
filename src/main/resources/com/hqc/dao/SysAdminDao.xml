@@ -51,7 +51,7 @@
 		#{userId}
 	</select>
 
-	<select id="queryByUserName" resultType="SysAdminEntity">
+	<select id="queryByUserName" resultType="SysAdminEntity" parameterMap="java.lang.String">
 		select * from sys_user
 		where username = #{username}
 	</select>

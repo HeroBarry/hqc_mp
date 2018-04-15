@@ -40,7 +40,7 @@ public interface MpArticleCategoryService {
 	 *            图文信息表
 	 * @return 影响的行数
 	 */
-	int save(MpArticleCategoryEntity articleCategoryEntity);
+	void save(MpArticleCategoryEntity articleCategoryEntity);
 
 	/*
 	 * 查询下拉

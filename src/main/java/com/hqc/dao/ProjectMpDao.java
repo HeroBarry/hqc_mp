@@ -5,6 +5,7 @@ import java.util.List;
 import com.hqc.entity.MpProjectCategoryEntity;
 import com.hqc.entity.MpProjectEntity;
 import com.hqc.entity.MpScenerySpotEntity;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 项目DAO
@@ -13,6 +14,7 @@ import com.hqc.entity.MpScenerySpotEntity;
  * @创建人
  * @创建时间 2017年5月18日
  */
+@Mapper
 public interface ProjectMpDao extends BaseDao<MpProjectEntity>{
 
 	/**

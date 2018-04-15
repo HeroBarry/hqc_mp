@@ -5,8 +5,10 @@ import java.util.Map;
 
 import com.hqc.entity.MpGoodsCategoryEntity;
 import com.hqc.entity.MpGoodsEntity;
+import org.apache.ibatis.annotations.Mapper;
 
 
+@Mapper
 public interface GoodsDao extends BaseDao<MpGoodsEntity> {
 	/**
 	 * 获取商品类别

@@ -1,5 +1,6 @@
 package com.hqc.dao;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import com.hqc.entity.Mp520Entity;
@@ -12,6 +13,7 @@ import com.hqc.entity.Mp520Entity;
  * @date：2017年5月17日
  * 
  */
+@Mapper
 public interface Mp520Dao extends BaseDao<Mp520Entity> {
 
 	/**

@@ -22,7 +22,7 @@ public interface MpWifiService {
 	 *            微信WiFi设备
 	 * @return 影响行数
 	 */
-	int save(MpWifiEntity entity);
+	void save(MpWifiEntity entity);
 
 	/**
 	 * 查询微信WiFi设备列表

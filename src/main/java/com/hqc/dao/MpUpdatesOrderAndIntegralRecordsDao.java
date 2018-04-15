@@ -4,11 +4,14 @@ import java.util.List;
 import java.util.Map;
 
 import com.hqc.entity.MpOrderRecordsEntity;
+import org.apache.ibatis.annotations.Mapper;
+
 /**
  * 修改订单表与兑换表,门表订单使用状态统一dao
  * @author Administrator
  *
  */
+@Mapper
 public interface MpUpdatesOrderAndIntegralRecordsDao extends BaseDao<MpOrderRecordsEntity> {
 	/**
 	 * 查询订单

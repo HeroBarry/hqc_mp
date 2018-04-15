@@ -1,6 +1,7 @@
 package com.hqc.dao;
 
 import com.hqc.entity.MpWifiEntity;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 微信WiFi设备
@@ -10,6 +11,7 @@ import com.hqc.entity.MpWifiEntity;
  * @date：2017年5月17日
  * 
  */
+@Mapper
 public interface MpWifiDao extends BaseDao<MpWifiEntity> {
 
 	/**

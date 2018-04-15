@@ -30,8 +30,8 @@ public class MpStoreServiceImpl implements MpStoreService {
 	private MpStoreDao dao;
 
 	@Override
-	public int save(MpStoreEntity entity) {
-		return dao.insert(entity);
+	public void save(MpStoreEntity entity) {
+		 dao.save(entity);
 	}
 
 	@Override
@@ -51,7 +51,7 @@ public class MpStoreServiceImpl implements MpStoreService {
 
 	@Override
 	public int updateByPrimaryKey(MpStoreEntity entity) {
-		return dao.updateByPrimaryKey(entity);
+		return dao.update(entity);
 	}
 
 	@Override

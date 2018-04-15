@@ -1,6 +1,7 @@
 package com.hqc.dao;
 
 import com.hqc.entity.MpParkingcChargeEntity;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 停车收费记录
@@ -10,6 +11,7 @@ import com.hqc.entity.MpParkingcChargeEntity;
  * @date：2017年6月5日
  * 
  */
+@Mapper
 public interface MpParkingInfoDao extends BaseDao<MpParkingcChargeEntity> {
 
 }

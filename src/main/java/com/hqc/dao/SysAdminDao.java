@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.hqc.entity.SysAdminEntity;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 系统用户
@@ -12,6 +13,7 @@ import com.hqc.entity.SysAdminEntity;
  * @email sunlightcs@gmail.com
  * @date 2016年9月18日 上午9:34:11
  */
+@Mapper
 public interface SysAdminDao extends BaseDao<SysAdminEntity> {
 
 	/**

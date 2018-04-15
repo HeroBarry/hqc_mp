@@ -30,10 +30,9 @@ public class MpAutoReplyServiceImpl implements MpAutoReplyService {
 
 	@Override
 	@Transactional
-	public int save(MpAutoReplyEntity mpAutoReply) throws Exception {
+	public void save(MpAutoReplyEntity mpAutoReply) throws Exception {
 		mpAutoReply.setCreateTime(DateUtils.getCurrentUnixTime());
-		int insert = dao.insert(mpAutoReply);
-		return insert;
+		dao.save(mpAutoReply);
 	}
 
 	@Override
@@ -53,7 +52,7 @@ public class MpAutoReplyServiceImpl implements MpAutoReplyService {
 
 	@Override
 	public int updateByPrimaryKey(MpAutoReplyEntity mpAutoReply) {
-		return dao.updateByPrimaryKey(mpAutoReply);
+		return dao.update(mpAutoReply);
 	}
 
 	@Override

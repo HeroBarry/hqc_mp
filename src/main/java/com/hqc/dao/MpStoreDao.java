@@ -1,6 +1,7 @@
 package com.hqc.dao;
 
 import com.hqc.entity.MpStoreEntity;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 微信门店
@@ -10,6 +11,7 @@ import com.hqc.entity.MpStoreEntity;
  * @date：2017年5月17日
  * 
  */
+@Mapper
 public interface MpStoreDao extends BaseDao<MpStoreEntity> {
 
 	/**

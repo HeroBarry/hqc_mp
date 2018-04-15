@@ -1,5 +1,6 @@
 package com.hqc.service.impl;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -26,8 +27,8 @@ public class MpOrderRecordsServiceImpl implements MpOrderRecordsService {
 	private MpOrderRecordsDao dao;
 
 	@Override
-	public int save(MpOrderRecordsEntity entity) {
-		return dao.insertSelective(entity);
+	public void save(MpOrderRecordsEntity entity) {
+		 dao.save(entity);
 	}
 
 	@Override
@@ -47,12 +48,14 @@ public class MpOrderRecordsServiceImpl implements MpOrderRecordsService {
 
 	@Override
 	public int updateByPrimaryKey(MpOrderRecordsEntity entity) {
-		return dao.updateByPrimaryKeySelective(entity);
+		return dao.update(entity);
 	}
 
 	@Override
 	public int delete(Long id) {
-		return dao.deleteByPrimaryKey(id);
+		Map<String, Object> map=new HashMap<>();
+		map.put("id",id);
+		return dao.delete(map);
 	}
 
 }

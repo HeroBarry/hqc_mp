@@ -3,6 +3,7 @@ package com.hqc.dao;
 import java.util.List;
 
 import com.hqc.entity.SysMenuEntity;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 菜单管理
@@ -11,6 +12,7 @@ import com.hqc.entity.SysMenuEntity;
  * @email sunlightcs@gmail.com
  * @date 2016年9月18日 上午9:33:01
  */
+@Mapper
 public interface SysMenuDao extends BaseDao<SysMenuEntity> {
 
 	/**

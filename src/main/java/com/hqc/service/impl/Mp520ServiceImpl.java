@@ -31,8 +31,8 @@ public class Mp520ServiceImpl implements Mp520Service {
 	@Override
 	// @Cacheable(key = "'mp520_num_' + #mp520.randomNumber")
 	// 防止并发访问
-	public int save(Mp520Entity mp520) {
-		return dao.insert(mp520);
+	public void save(Mp520Entity mp520) {
+		dao.save(mp520);
 	}
 
 	@Override
@@ -91,6 +91,6 @@ public class Mp520ServiceImpl implements Mp520Service {
 		if (null != queryByOpenIdAny) { // 数据库已存在记录
 			return 1;
 		}
-		return dao.updateByPrimaryKey(mp520);
+		return dao.update(mp520);
 	}
 }

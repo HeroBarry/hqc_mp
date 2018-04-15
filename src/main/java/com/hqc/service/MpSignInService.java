@@ -19,7 +19,7 @@ public interface MpSignInService {
 	 * @param entity
 	 * @return
 	 */
-	int save(MpSignInEntity entity);
+	void save(MpSignInEntity entity);
 	
 	
 	/**

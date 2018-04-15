@@ -22,7 +22,7 @@ public interface MpOrderRecordsService {
 	 *            商品订单记录
 	 * @return 影响行数
 	 */
-	int save(MpOrderRecordsEntity entity);
+	void save(MpOrderRecordsEntity entity);
 
 	/**
 	 * 查询商品订单记录列表

@@ -1,7 +1,7 @@
 package com.hqc.dao;
 
-import tk.mybatis.mapper.common.Mapper;
-
+//import tk.mybatis.mapper.common.Mapper;
+//import com.github.abel533.mapper.Mapper;
 import java.util.List;
 import java.util.Map;
 
@@ -12,7 +12,7 @@ import java.util.Map;
  * @email sunlightcs@gmail.com
  * @date 2016年9月18日 上午9:31:36
  */
-public interface BaseDao<T>  extends Mapper<T> {
+public interface BaseDao<T>{//  extends Mapper<T>
 
 	/**
 	 * 保存一个实体

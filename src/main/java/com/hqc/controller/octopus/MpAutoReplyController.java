@@ -76,12 +76,8 @@ public class MpAutoReplyController {
 	@RequestMapping("/save")
 	@RequiresPermissions("mp:autoreply:save")
 	public R save(MpAutoReplyEntity entity) throws Exception {
-		int save = mpAutoReplyService.save(entity);
-		if (save > 0) {
-			return R.ok();
-		} else {
-			return R.error("添加失败，请重试!");
-		}
+		mpAutoReplyService.save(entity);
+		return R.ok();
 	}
 
 	/**

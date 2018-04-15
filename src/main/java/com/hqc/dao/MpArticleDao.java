@@ -2,6 +2,7 @@ package com.hqc.dao;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import com.hqc.entity.MpArticleCategoryEntity;
@@ -14,6 +15,7 @@ import com.hqc.entity.MpArticleEntity;
  * @email sunlightcs@gmail.com
  * @date 2016年9月18日 上午9:34:11
  */
+@Mapper
 public interface MpArticleDao extends BaseDao<MpArticleEntity> {
 
 	/**

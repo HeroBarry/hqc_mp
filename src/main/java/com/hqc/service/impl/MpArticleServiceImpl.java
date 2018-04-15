@@ -54,8 +54,8 @@ public class MpArticleServiceImpl implements MpArticleService {
 	}
 
 	@Override
-	public int save(MpArticleEntity articleEntity) {
-		return informationDao.insert(articleEntity);
+	public void save(MpArticleEntity articleEntity) {
+		 informationDao.save(articleEntity);
 	}
 
 	@Override

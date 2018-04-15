@@ -22,7 +22,7 @@ public interface MpBannerService {
 	 *            横幅图片
 	 * @return 影响行数
 	 */
-	int save(MpBannerEntity entity);
+	void save(MpBannerEntity entity);
 
 	/**
 	 * 查询列表

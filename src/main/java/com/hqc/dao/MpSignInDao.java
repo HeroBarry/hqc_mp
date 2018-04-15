@@ -4,7 +4,9 @@ import java.util.List;
 import java.util.Map;
 
 import com.hqc.entity.MpSignInEntity;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface MpSignInDao extends BaseDao<MpSignInEntity> {
 	/**
 	 * 根据会员id查询当月签到的天数

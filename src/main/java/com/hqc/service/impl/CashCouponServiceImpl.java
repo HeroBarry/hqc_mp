@@ -34,7 +34,7 @@ public class CashCouponServiceImpl implements CashCouponService {
 	 * 增加
 	 */
 	public void insert(MpCashCouponEntity entity){
-		cashCouponDao.insert(entity);
+		cashCouponDao.save(entity);
 	}
 	/**
 	 * 修改

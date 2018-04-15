@@ -22,7 +22,7 @@ public interface MpTicketOrderService {
 	 *            购票订单记录
 	 * @return 影响行数
 	 */
-	int save(MpTicketOrderEntity entity);
+	void save(MpTicketOrderEntity entity);
 
 	/**
 	 * 查询购票订单记录列表

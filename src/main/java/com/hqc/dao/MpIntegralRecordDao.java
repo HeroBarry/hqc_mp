@@ -5,7 +5,9 @@ import java.util.Map;
 
 import com.hqc.entity.MpGoodsExchangeRecordEntity;
 import com.hqc.entity.MpIntegralRecordEntity;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface MpIntegralRecordDao {
 	/**
 	 * 

@@ -22,7 +22,7 @@ public interface MpTicketService {
 	 *            景区门票
 	 * @return 影响行数
 	 */
-	int save(MpTicketEntity entity);
+	void save(MpTicketEntity entity);
 
 	/**
 	 * 查询景区门票列表

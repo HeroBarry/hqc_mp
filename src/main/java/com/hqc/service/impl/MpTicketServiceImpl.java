@@ -1,5 +1,6 @@
 package com.hqc.service.impl;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -26,8 +27,8 @@ public class MpTicketServiceImpl implements MpTicketService {
 	private MpTicketDao mpTicketDao;
 
 	@Override
-	public int save(MpTicketEntity entity) {
-		return mpTicketDao.insertSelective(entity);
+	public void save(MpTicketEntity entity) {
+		 mpTicketDao.save(entity);
 	}
 
 	@Override
@@ -47,12 +48,14 @@ public class MpTicketServiceImpl implements MpTicketService {
 
 	@Override
 	public int updateByPrimaryKey(MpTicketEntity entity) {
-		return mpTicketDao.updateByPrimaryKeySelective(entity);
+		return mpTicketDao.update(entity);
 	}
 
 	@Override
 	public int delete(Long id) {
-		return mpTicketDao.deleteByPrimaryKey(id);
+		Map<String, Object> map=new HashMap<>();
+		map.put("id",id);
+		return mpTicketDao.delete(map);
 	}
 	
 	@Override

@@ -29,8 +29,8 @@ public class MpWifiServiceImpl implements MpWifiService {
 	private MpWifiDao dao;
 
 	@Override
-	public int save(MpWifiEntity entity) {
-		return dao.insert(entity);
+	public void save(MpWifiEntity entity) {
+		dao.save(entity);
 	}
 
 	@Override

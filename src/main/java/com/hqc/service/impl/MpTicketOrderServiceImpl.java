@@ -33,7 +33,7 @@ public class MpTicketOrderServiceImpl implements MpTicketOrderService {
 
 	@Override
 	public int delete(Long id) {
-		return mpTicketOrderDao.deleteByPrimaryKey(id);
+		return mpTicketOrderDao.deleteById(""+id);
 	}
 	
 	
@@ -43,13 +43,13 @@ public class MpTicketOrderServiceImpl implements MpTicketOrderService {
 	}
 
 	@Override
-	public int save(MpTicketOrderEntity entity) {
-		return mpTicketOrderDao.insertSelective(entity);
+	public void save(MpTicketOrderEntity entity) {
+		 mpTicketOrderDao.save(entity);
 	}
 
 	@Override
 	public int updateByPrimaryKey(MpTicketOrderEntity entity) {
-		return mpTicketOrderDao.updateByPrimaryKeySelective(entity);
+		return mpTicketOrderDao.update(entity);
 	}
 
 	@Override
